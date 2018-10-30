@@ -1,5 +1,3 @@
-import numpy as np
-
 def square(x):
     return x*x
 
@@ -17,15 +15,4 @@ def CentralDifference(f, x, h):
     #         2*h
     return (f(x+h) - f(x-h))/(2*h)
 
-hs = []
-vals = []
-for i in range(2, 8):
-    h = 10**(-i)
-    hs.append(h) 
-    vals.append(abs(CentralDifference(np.sin, 0.0, h) - 1.0))
-
-import matplotlib.pyplot as plt
-
-plt.loglog(hs, vals)
-plt.imshow
 
