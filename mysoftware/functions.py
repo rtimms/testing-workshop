@@ -22,7 +22,7 @@ vals = []
 for i in range(2, 8):
     h = 10**(-i)
     hs.append(h) 
-    vals.append(abs(CentralDifference(np.sin, 0.0, h) - 1.0)))
+    vals.append(abs(CentralDifference(np.sin, 0.0, h) - 1.0))
 
 import matplotlib.pyplot as plt
 
